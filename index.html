@@ -53,9 +53,20 @@
 <!-- "contact me" section-->
 <div class="contact-me-container"> <!-- flex container for contact section -->
     <div class="contact-section"> <!--flex item #1-->
-        <h2 id="contact">CONTACT ME</h2>
+        <h2 id="contact">CONTACT ME</h2> <!-- 1st child of flex item #1 -->
+        <div class="contact-form">
+            <form action=""> <!-- 2nd child of flex item #1-->
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder=
+                "Your name here...">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="C'mon, don't be shy..."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-    <div class="links-section"> <!--flex item #2-->
+
+ <div class="links-section"> <!--flex item #2-->
         <h2 id="links">LINKS</h2>
         <br>
         <a href="https://www.linkedin.com/in/devin-jones-90099b154" class="fab fa-linkedin-in"></a>
@@ -64,8 +75,7 @@
         <a href="https://www.instagram.com/devinvjones/" class="fab fa-instagram"></a>
         <a href="https://www.ravelry.com/projects/flowerandpail" class="fab fa-ravelry"></a>
         <a href="https://open.spotify.com/collection/playlists" class="fab fa-spotify"></a>
-    </div>
-</div>  
+</div> 
 <!-- footer -->
 <div class="footer">
 <p>Made with love and squalor by Devin Jones. 2020. </p>
