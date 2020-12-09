@@ -103,17 +103,17 @@
     opacity: 1;
 }
 
-/* flex container for contact me */
+/* contact me section */
 .contact-me-container {
-    display: flex; 
-    flex-flow: row wrap; 
+    display: flex; /* makes a flex container*/
+    flex-flow: column wrap; /*flex items side by side*/
     height: 600px;  
-    background-color: #ffc182; 
+    background-color: #ffc182;
 }
 
-.contact-section {
-    flex: 75%; 
+.contact-section { /*flex item*/
     background-color: #c29dc2; 
+    flex: 75%; 
 }
 
 .contact-section h2 {
@@ -154,8 +154,9 @@
 }
 
 .links-section {
-    flex: 25%;  
+    flex:25%;  
     background-color: #ffc182; 
+    display: inline-block; 
 }
 
 .links-section h2 {
@@ -188,7 +189,7 @@
     flex-flow: row nowrap;  
     height:75px; 
     background-color:#ffc182;
-    justify-content: center; 
+    align-content: flex-end;
 }
 
 .footer p {
