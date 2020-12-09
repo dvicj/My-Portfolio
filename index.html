@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Devin Jones's Portfolio</title>
 </head>
 <body>
@@ -27,31 +28,47 @@
 <!-- "my work" section -->
 <div class="my-work-container"> <!--flex container for my work -->
     <div class="projects"> <!-- flex item #1-->
-         <h2 id="#mywork">MY WORK</h2>
+         <h2 id="mywork">MY WORK</h2>
     </div>  
-    <div class="sideprojects"> <!-- flex item #2-->
+    <div class="image"> <!-- flex item #2-->
     </div>
 </div>  
 
 <!-- profile image/ about me section-->
 <div class="about-me-container"> <!-- flex container for about me -->
     <div class="image"> <!-- flex item #1-->
-    <img src="profile-image.jpg" alt="">
+        <img src="profile-image.jpg" alt="">
+        <div class="text-image">
+            Hey there.<br>
+            Devin Jones.<br>
+            27.<br>
+            Canadian. <br>
+            Learning to code. <br>
+        </div>
     </div>
     <div>
-    <h2 id="#aboutme">ABOUT ME</h2> <!-- flex item #2-->
+    <h2 id="aboutme">ABOUT ME</h2> <!-- flex item #2-->
     </div>  
 
 </div>
 
 <!-- "contact me" section-->
-<h2 id="#contact">Contact Me</h2>
-
-<!-- "links" section -->
-<h2 id="links">Links</h2>
-
+<div class="contact-me-container"> <!-- flex container for contact section -->
+    <div class="contact-section"> <!--flex item #1-->
+        <h2 id="contact">CONTACT ME</h2>
+    </div>
+    <div class="links-section"> <!--flex item #2-->
+        <h2 id="links">LINKS</h2>
+        <a href="www.linkedin.com/in/devin-jones-90099b154" class="fab fa-linkedin"></a>
+        <a href="mailto:devinvjones@gmail.com" class="fas fa-envelope"></a>
+        <a href="https://github.com/dvicj" class="fab fa-github"></a>
+        <a href="https://www.instagram.com/devinvjones/" class="fab fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+    </div>
+</div>  
 <!-- footer -->
-<p>Made with love by Devin Jones. 2020. </p>
-
+<div class="footer">
+<p>Made with love and squalor by Devin Jones. 2020. </p>
+</div> 
 </body>
 </html>
