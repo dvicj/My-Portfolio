@@ -4,6 +4,7 @@
     font-family: monospace;
     text-decoration: none; 
     background-color: #c29dc2; 
+    box-sizing: border-box;
 }
 
 
@@ -72,18 +73,16 @@
     display: flex;
     flex-flow: row nowrap;
     height: 400px; 
+    background-color: #c29dc2;
 }
 
 .about-me-container h2 {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    padding: 10px; 
-    margin:0 0 0 13px;
     font-size: 20px; 
     letter-spacing: 24px; 
-    height: 380px; 
+    height: 400px; 
     color:#FFC182; 
-    background-color: #c29dc2;  
     letter-spacing: 24px; 
     border: #ffc182 dotted; 
 }
@@ -107,16 +106,14 @@
 /* flex container for contact me */
 .contact-me-container {
     display: flex; 
-    flex-flow: row nowrap; 
+    flex-flow: row wrap; 
     height: 600px;  
     background-color: #ffc182; 
 }
 
 .contact-section {
-    height: 600px; 
-    width: 281px; 
+    flex: 75%; 
     background-color: #c29dc2; 
-
 }
 
 .contact-section h2 {
@@ -124,15 +121,40 @@
     font-size: 25px; 
     background-color:#c29dc2; 
     writing-mode: vertical-lr;
-    text-orientation: upright;   
-    padding: 10px 10px 23px 10px;  
+    text-orientation: upright;    
     letter-spacing: 27px; 
     border: #ffc182 dotted; 
+    float: left; 
+}
+
+.contact-form {
+    border:#ffc182 dotted; 
+    margin-top: 200px; 
+    width: 200px; 
+    float: left;
+}
+.contact-form label {
+    font-size: 16px;
+    color:#ffc182;
+    width: 25%; 
+    box-sizing: border-box;
+}
+.contact-form input, textarea {
+    margin: 5px; 
+    border: #ffc182 dotted; 
+}
+.contact-form ::placeholder {
+    font-size: 12px;
+    color: white;
+}
+.contact-form input[type=submit] {
+    color: #C29DC2;
+    background-color:#ffc182;
+    border:none; ; 
 }
 
 .links-section {
-    height: 600px; 
-    width: auto; 
+    flex: 25%;  
     background-color: #ffc182; 
 }
 
@@ -163,7 +185,7 @@
 
 .footer {
     display: flex; 
-    flex-flow: row wrap;  
+    flex-flow: row nowrap;  
     height:75px; 
     background-color:#ffc182;
     justify-content: center; 
