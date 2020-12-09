@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Devin Jones's Portfolio</title>
 </head>
 <body>
 
 <!-- header/ nav bar -->
-<header> 
-<h2>My Work</h2>
-<h2>About Me</h2>
-<h2>Contact</h2>
-<h2>Links</h2>
-<h2>Resume</h2>
-</header>
+<div class= "navbar">
+    <header> 
+        <a href="#mywork">My Work</h2>
+        <a href="#aboutme">About Me</h2>
+        <a href="#contact">Contact</h2>
+        <a href="#links">Links</h2>
+        <a href="">Resume</h2>
+    </header>
+</div>
 
 <!-- hero image -->
-<img>
+<div class= "hero">
+    <img>
+</div>
 
 <!-- "my work" section -->
-<h2>My Work</h2>
+<div class="my-work-container"> <!--flex container for my work -->
+    <div class="projects"> <!-- flex item #1-->
+         <h2 id="#mywork">MY WORK</h2>
+    </div>  
+    <div class="sideprojects"> <!-- flex item #2-->
+    </div>
+</div>  
 
-<!-- profile image-->
-<img>
+<!-- profile image/ about me section-->
+<div class="about-me-container"> <!-- flex container for about me -->
+    <div class="image"> <!-- flex item #1-->
+    <img src="profile-image.jpg" alt="">
+    </div>
+    <div>
+    <h2 id="#aboutme">ABOUT ME</h2> <!-- flex item #2-->
+    </div>  
 
-<!-- "about me" section-->
-<h2>About Me</h2>
+</div>
 
 <!-- "contact me" section-->
-<h2>Contact Me</h2>
+<h2 id="#contact">Contact Me</h2>
 
 <!-- "links" section -->
-<h2>Links</h2>
+<h2 id="links">Links</h2>
 
 <!-- footer -->
 <p>Made with love by Devin Jones. 2020. </p>
