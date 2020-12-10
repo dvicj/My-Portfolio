@@ -7,37 +7,30 @@
     box-sizing: border-box;
 }
 
+:root {
+    --lilac: #C29DC2; 
+    --peach: #ffc182; 
+}
+
 
 /* navbar/header */
 
 /*navbar flex container*/
 .navbar {
     display: flex; 
-    flex-flow: row wrap;  
-    height:75px; 
+    flex-flow: column wrap;   
     width: 100%;
     font-size: 16px; 
-    text-align: center; 
-    background-color:#C29DC2;
-    border-bottom: #FFC182 dotted; 
-    align-items:center;
-    justify-content: space-between;
+    background-color: var(--lilac); 
 }
 
 /* navbar flex items */ 
 .navbar-links {
     flex: 100%; 
-}
-.navbar-links a {
-    margin: 1px; 
-    border: #ffc182 dotted; 
-    color: #ffc182; 
-    background-color: #c29dc2;
-}
-
-.navbar header a:hover {
-    color: #c29dc2; 
-    background-color: #ffc182; 
+    padding: 25px 0 0 5px; 
+    border-bottom:var(--peach) dotted 1px; 
+    color: var(--peach); 
+    text-align: center;
 }
 
 /* content */ 
@@ -51,7 +44,7 @@
     height: 750px;
     width: 100%; 
     background-color: #ffc182;
-    justify-content: center;
+    justify-content: center; 
 }
 /* my work flex items */ 
 .projects {
@@ -200,3 +193,23 @@
     border-top: #c29dc2 dotted; 
     padding-top: 12px; 
 }
+
+@media screen and (min-width: 600px) {
+    .navbar {
+          flex-flow: row nowrap; 
+          height: 200px; 
+          width: 100%;
+          font-size: 50px;  
+          padding: 25px; 
+          margin: 10px; 
+     }
+     .navbar-links {
+        align-self: center;
+        padding-left: 55px;
+        border:var(--peach) dotted; 
+     }
+     .navbar header a:hover {
+        color: var(--lilac); 
+        background-color: var(--lilac); 
+    }
+  }
