@@ -3,13 +3,20 @@
     padding: 0;
     font-family: monospace;
     text-decoration: none; 
-    background-color: #c29dc2; 
+    background-color: var(--peach); 
     box-sizing: border-box;
 }
 
 :root {
     --lilac: #C29DC2; 
     --peach: #ffc182; 
+}
+img {
+    border-radius: 20px; 
+    opacity: 0.7;
+}
+img:hover {
+    opacity: 1; 
 }
 
 
@@ -19,23 +26,22 @@
 .navbar {
     display: flex; 
     flex-flow: column wrap;   
-    width: 100%;
     font-size: 16px; 
     background-color: var(--lilac); 
 }
 
 /* navbar flex items */ 
-.navbar-links {
-    flex: 100%; 
+.navbar-links { 
     padding: 25px 0 0 5px; 
     border-bottom:var(--peach) dotted 1px; 
     color: var(--peach); 
     text-align: center;
+    background-color: var(--lilac);
 }
 
 /* hero - placeholder for now*/
 .hero {
-    height: 250px; 
+    height: 150px; 
     background-color: white;
 }
 
@@ -51,37 +57,47 @@
     grid-template-rows: repeat (10, 1fr);
     background-color: var(--peach);
     grid-gap: 5px;
+    margin: auto;
 }
 /* my work grid items */ 
 .grid-item {
     display: flex; 
     background-color: var(--peach);
 }
+.grid-item img {
+    display: flex; 
+    width: 100%; 
+    height: 100%;
+}
 .item-1{
-    grid-column: 2 / span 5;
+    grid-column: 1 / span 10; 
 }
 .item-1 h2 {
     color: var(--lilac);
     background-color: var(--peach);
     font-size: 35px;  
-    letter-spacing: 27px; 
+    letter-spacing: 27px;  
 }
-.item-2 {
-    grid-column: 4/ span 4; 
-    grid-row: 2 / span 2; 
+.item-2 { /* horiseon */ 
+    grid-column: 1/ span 10; 
+    grid-row: 2 / span 4; 
 }
-.item-2 img {
-    max-width: 100%; 
-    max-height: 100%; 
-}
-.item-3 {
+.item-3 { /*run-buddy*/ 
     grid-column: 1/ span 3;
-    grid-row: 5/ span 2; 
+    grid-row: 6; 
+}
+.item-4 { /* trolls */ 
+    grid-column: 4/ span 2; 
+    grid-row: 6/ span 1; 
+}
+.item-5 { /**dino database**/
+    grid-column: 6/ span 2;
+    grid-row: 6/ span 1; 
 }
 
-.item-3 img {
-    max-width: 100%; 
-    max-height: 100%; 
+.item-6 { /* luna and vanessa */
+    grid-column: 8/ span 3; 
+    grid-row: 6/ span 1;
 }
 
 
@@ -223,18 +239,26 @@
     .navbar {
           flex-flow: row nowrap; 
           height: 200px; 
-          width: 100%;
           font-size: 50px;  
           padding: 25px; 
           margin: 10px; 
+          justify-content: space-around;
+          align-items: center;
+          border-bottom: var(--peach) dotted;
      }
      .navbar-links {
-        align-self: center;
         padding-left: 55px;
         border:var(--peach) dotted; 
+        text-align: center;
      }
-     .navbar header a:hover {
+     .navbar-links::before {
+         content: "☔";
+     }
+     .navbar-links:hover {
         color: var(--lilac); 
-        background-color: var(--lilac); 
+        background-color: var(--peach); 
+    }
+    .navbar-links:hover::before {
+        content: "✨";
     }
   }
