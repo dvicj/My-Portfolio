@@ -58,6 +58,7 @@ img:hover {
     background-color: var(--peach);
     grid-gap: 5px;
     margin: auto;
+    height: 500px; 
 }
 /* my work grid items */ 
 .grid-item {
@@ -105,36 +106,47 @@ img:hover {
 
 .about-me-container {
     display: flex;
-    flex-flow: row nowrap;
-    height: 400px; 
-    background-color: #c29dc2;
+    flex-flow: column nowrap;
+    height: auto; 
+    background-color: var(--lilac);
 }
-
-.about-me-container h2 {
+/*about me flex items*/ 
+.image-item {
+    width: 65%; 
+    background: var(--lilac);
+    border: var(--peach) dotted; 
+    border-radius: 10px;
+    align-self: flex-start;
+}
+.image-item img {
+    width: 100%;
+    height:auto;  
+    border-radius: 10px; 
+}
+.about-me-item { 
+    width: 35%; 
+    border: var(--lilac) dotted; 
+    border-radius: 10px; 
+    height: auto; 
+    align-self: flex-end;
+}
+.about-me-item h2 {  
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 20px; 
-    letter-spacing: 24px; 
-    height: 400px; 
-    color:#FFC182; 
-    letter-spacing: 24px; 
-    border: #ffc182 dotted; 
-}
-
-.image img {
-    width: auto; 
-    height:400px;
-    opacity: .8; 
+    letter-spacing: 24px;  
+    color: var(--lilac); 
+    border-radius: 10px;    
 }
 .text-image {
-    position: absolute; 
-    color: white; 
-    font-size: 30px; 
-    bottom: -420px;
-    background: none; 
-}
-.image img:hover {
-    opacity: 1;
+    width: 65%; 
+    color:var(--lilac); 
+    font-size: 25px; 
+    background-color: var(--peach); 
+    align-self: flex-start;
+    border: var(--lilac) dotted; 
+    border-radius: 10px; 
+    align-self: flex-start; 
 }
 
 /* contact me section */
