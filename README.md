@@ -3,7 +3,7 @@
 Please visit my completed webpage at:  https://dvicj.github.io/My-Portfolio/
 
 How it started: 
-![how it started]()
+![how it started](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/2020-12-08%20%20-%20image%201.PNG)
 
 How it's going:
 
