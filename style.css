@@ -3,7 +3,7 @@
     padding: 0;
     font-family: monospace;
     text-decoration: none; 
-    font-size: 18px; 
+    font-size: 20px; 
     background-color: var(--peach); 
     box-sizing: border-box;
 }
@@ -16,11 +16,8 @@
 }
 img {
     border-radius: 20px; 
-    opacity: 0.7;
 }
-img:hover {
-    opacity: 1; 
-}
+
 
 
 /* navbar/header */
@@ -66,7 +63,7 @@ img:hover {
     grid-auto-flow: dense;
     grid-template-columns: repeat (10, 1fr);
     grid-template-rows: repeat (10, 1fr);
-    background-color: var(--peach);
+    background-color: var(--lilac);
     grid-gap: 5px;
     margin: auto;
     height: 500px; 
@@ -74,8 +71,8 @@ img:hover {
 /* my work grid items */ 
 .grid-item {
     display: flex; 
-    background-color: var(--peach);
-    border: var(--lilac) dotted;
+    background-color: var(--lilac);
+    border: var(--border-peach);
     border-radius: 8px;
 }
 .grid-item img {
@@ -176,47 +173,54 @@ img:hover {
     height: 250px; 
     order: 3;
 }
+
 /* contact me section */
 .contact-me-container {
     display: flex; /* makes a flex container*/
-    flex-flow: column wrap; /*flex items side by side*/
+    flex-flow: column wrap; 
     height: 400px;  
-    background-color: #ffc182;
+    border: var(--border-peach);
+    border-radius: 10px;
+    background-color: var(--lilac);
 }
 
 .contact-section { /*flex item*/
-    background-color: #c29dc2; 
-    flex: 75%; 
+    background-color: var(--peach); 
     height:400px;
+    border-radius: 10px;
+    width:20%;
+    border: var(--border-lilac);
 }
 
 .contact-section h2 {
-    color: #ffc182; 
-    font-size: 25px; 
-    background-color:#c29dc2; 
+    color: var(--lilac); 
+    font-size: 25px;  
     writing-mode: vertical-lr;
     text-orientation: upright;    
     letter-spacing: 9px; 
-    border: #ffc182 dotted; 
-    float: left;
-    height: 400px; 
+    height: 400px;  
+    text-align: center; 
+    margin-left: 18px;
 }
 
 .contact-form {
-    border:#ffc182 dotted; 
-    margin-top: 200px; 
-    width: 200px; 
-    float: left;
+    width: 50%; 
+    border-radius: 10px; 
+    height: 400px;
+    background-color: var(--lilac);
+    margin-top: 110px;
 }
+
 .contact-form label {
-    font-size: 16px;
-    color:#ffc182;
-    width: 25%; 
+    font-size: 20px;
+    color: var(--lilac);
     box-sizing: border-box;
 }
 .contact-form input, textarea {
-    margin: 5px; 
-    border: #ffc182 dotted; 
+    border: var(--border-peach); 
+    background-color: var(--lilac);
+    width: 100%; 
+    border-radius: 10px;
 }
 .contact-form ::placeholder {
     font-size: 12px;
@@ -225,23 +229,23 @@ img:hover {
 .contact-form input[type=submit] {
     color: #C29DC2;
     background-color:#ffc182;
-    border:none; ; 
+    border:var(--border-lilac); 
+    border-radius: 10px;
 }
 
 .links-section {
-    flex:25%;  
-    background-color: #ffc182; 
-    display: inline-block; 
+    width:30%;  
+    background-color: var(--peach);  
     height: 400px;
+    border:var(--border-lilac);
 }
 
 .links-section h2 {
-    color: #c29dc2; 
+    color: var(--lilac);
     font-size: 20px; 
     background-color: #ffc182; 
-    letter-spacing: 4px;
-    padding-left: 15px;
-    border: #c29dc2 dotted;   
+    letter-spacing: 9px;  
+    text-align: center;
 }
 
 .links-section a {
@@ -265,16 +269,16 @@ img:hover {
     display: flex; 
     flex-flow: row nowrap;  
     height:75px; 
-    background-color:#ffc182;
+    background-color: var(--lilac);
     align-content: flex-end;
 }
 
 .footer p {
     text-align:center;
+    background-color: var(--lilac);
     font-size: 20px; 
-    color: #c29dc2;
-    background-color: #ffc182; 
-    border-top: #c29dc2 dotted; 
+    color: var(--peach);
+    border-top: var(--border-peach); 
     padding-top: 12px; 
 }
 
@@ -293,6 +297,7 @@ img:hover {
         padding-left: 55px;
         border:var(--peach) dotted; 
         text-align: center;
+        font-size: 25px;
      }
      .navbar-links::before {
          content: "☔";
@@ -303,5 +308,11 @@ img:hover {
     }
     .navbar-links:hover::before {
         content: "✨";
+    }
+    img {
+        opacity: .7; 
+    }
+    img:hover {
+        opacity: 1; 
     }
   }
