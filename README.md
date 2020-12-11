@@ -3,6 +3,7 @@
 Please visit my completed webpage at:  https://dvicj.github.io/My-Portfolio/
 
 How it started: 
+![how it started]()
 
 How it's going:
 
@@ -76,6 +77,8 @@ These are some sources I used to help me along:
 
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp)
 
+- [Font Awesome](https://fontawesome.com/icons?d=gallery)
+
 ## Learning
 Here are the highlights of what I learned and issues I had while writing this code.
 
@@ -89,8 +92,8 @@ Here are the highlights of what I learned and issues I had while writing this co
 
 Below are some images of the drawings I did when planning my portfolio out. Quite a few things changed from my original ideas, but I found the drawings extremely helpful in planning out my HTML and CSS. 
 
-![desktop version](https:)
-![mobile version](https:)
+![desktop version](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/desktop-version.PNG)
+![mobile version](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/mobile-version.PNG)
 ![responsiveness](https:)
 
 
