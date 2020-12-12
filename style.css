@@ -1,3 +1,5 @@
+
+/* default values for the page */
 * {
     margin: 0;
     padding: 0;
@@ -6,20 +8,21 @@
     font-size: 20px; 
     background-color: var(--peach); 
     box-sizing: border-box;
+    border-radius: 10px; 
 }
 
+img {
+    border-radius: 20px; 
+}
+/* variables */
 :root {
     --lilac: #C29DC2; 
     --peach: #ffc182; 
     --border-lilac: var(--lilac) dotted;
     --border-peach: var(--peach) dotted; 
 }
-img {
-    border-radius: 20px; 
-}
 
-
-
+/* MOBILE VERSION */
 /* navbar/header */
 
 /*navbar flex container*/
@@ -46,11 +49,10 @@ img {
     content: "✨";
 }
 
-
 /* hero - placeholder for now*/
 .hero {
     height: 150px; 
-    background-color: white;
+    background-color:var(--lilac);
 }
 
 /* content */ 
@@ -79,6 +81,7 @@ img {
     display: flex; 
     width: 100%; 
     height: 100%;
+    border-radius: 8px;
 }
 .item-1{
     grid-column: 1 / span 10; 
@@ -116,8 +119,8 @@ img {
     grid-row: 6/ span 1;
 }
 
-.tooltip {
-    position: relative; 
+/* tooltip hidden on mobile screens */
+.tooltip { 
 }
 
 .tooltip .tooltiptext {
@@ -126,13 +129,8 @@ img {
     background-color: var(--peach);
     color: var(--lilac); 
     text-align: center; 
-    border-radius: 10px;
     position: absolute; 
     z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
 }
 
 /* about me and profile pic */
@@ -155,25 +153,20 @@ img {
 .image-item img {
     width: 100%;
     height:250px; 
-    border: var(--peach) dotted; 
-    border-radius: 10px;  
+    border: var(--border-peach);  
 }
 .about-me-item { 
     width: 35%; 
-    border: var(--lilac) dotted; 
-    border-radius: 10px; 
+    border: var(--border-lilac); 
     height: auto; 
     order: 1; 
 }
 .about-me-item h2 {  
     writing-mode: vertical-lr;
     text-orientation: upright;
-    font-size: 20px; 
     letter-spacing: 24px;
-    margin-left: 18px;
     text-align: center;   
-    color: var(--lilac); 
-    border-radius: 10px;  
+    color: var(--lilac);  
     width: 100%;  
 }
 
@@ -186,26 +179,27 @@ img {
     color:var(--lilac); 
     font-size: 25px; 
     background-color: var(--peach); 
-    border: var(--lilac) dotted; 
-    border-radius: 10px; 
+    border: var(--border-lilac); 
     height: 250px; 
     order: 3;
+}
+/* text hidden on mobile */
+.text-image-2 {
+    display: none; 
 }
 
 /* contact me section */
 .contact-me-container {
-    display: flex; /* makes a flex container*/
+    display: flex;
     flex-flow: column wrap; 
     height: 400px;  
     border: var(--border-peach);
-    border-radius: 10px;
     background-color: var(--lilac);
 }
 
 .contact-section { /*flex item*/
     background-color: var(--peach); 
     height:400px;
-    border-radius: 10px;
     width:20%;
     border: var(--border-lilac);
 }
@@ -223,14 +217,12 @@ img {
 
 .contact-form {
     width: 50%; 
-    border-radius: 10px; 
     height: 400px;
     background-color: var(--lilac);
     margin-top: 110px;
 }
 
 .contact-form label {
-    font-size: 20px;
     color: var(--lilac);
     box-sizing: border-box;
 }
@@ -238,15 +230,14 @@ img {
     border: var(--border-peach); 
     background-color: var(--lilac);
     width: 100%; 
-    border-radius: 10px;
 }
 .contact-form ::placeholder {
     font-size: 12px;
     color: white;
 }
 .contact-form input[type=submit] {
-    color: #C29DC2;
-    background-color:#ffc182;
+    color: var(--lilac);
+    background-color: var(--peach);
     border:var(--border-lilac); 
     border-radius: 10px;
 }
@@ -260,9 +251,7 @@ img {
 
 .links-section h2 {
     color: var(--lilac);
-    font-size: 20px; 
-    background-color: #ffc182; 
-    letter-spacing: 9px;  
+    background-color: var(--peach); 
     text-align: center;
 }
 
@@ -273,34 +262,29 @@ img {
     text-decoration: none;
     margin-left: 28px;
     background: none; 
-    color: #c29dc2; 
-    opacity: .7; 
+    color: var(--lilac); 
   }
-
-.links-section a:hover {
-    opacity: 1; 
-}
 
 /* footer section */
 
 .footer {
     display: flex; 
     flex-flow: row nowrap;  
-    height:75px; 
+    height:auto; 
     background-color: var(--lilac);
-    align-content: flex-end;
+    align-content: center;
 }
 
 .footer p {
     text-align:center;
     background-color: var(--lilac);
-    font-size: 20px; 
     color: var(--peach);
     border-top: var(--border-peach); 
-    padding-top: 12px; 
 }
 
-@media screen and (min-width: 600px) {
+/* DESKTOP/ LAPTOP VERSION */
+@media screen and (min-width: 950px) {
+    /* navbar/header */
     .navbar {
           flex-flow: row nowrap; 
           height: 200px; 
@@ -310,27 +294,241 @@ img {
           justify-content: space-around;
           align-items: center;
           border-bottom: var(--peach) dotted;
-     }
-     .navbar-links {
+    }
+    .navbar-links {
         padding-left: 55px;
         border:var(--peach) dotted; 
         text-align: center;
         font-size: 25px;
-     }
-     .navbar-links::before {
-         content: "☔";
-     }
-     .navbar-links:hover {
+    }
+    .navbar-links:hover {
         color: var(--lilac); 
         background-color: var(--peach); 
+        font-size: 35px;
     }
-    .navbar-links:hover::before {
-        content: "✨";
-    }
+    /* all images in desktop are transparent until hovered over */
     img {
         opacity: .7; 
     }
     img:hover {
         opacity: 1; 
     }
-  }
+    /* tooltips appear over images in desktop */
+    .tooltip { 
+    }
+    
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px; 
+        background-color: var(--peach);
+        color: var(--lilac); 
+        text-align: center; 
+        position: absolute; 
+        z-index: 1;
+    }
+    
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    /* my work grid container */
+    .my-work-container {
+    display: grid; 
+    grid-auto-flow: dense;
+    grid-template-columns: repeat (10, 1fr);
+    grid-template-rows: repeat (10, 1fr);
+    background-color: var(--lilac);
+    grid-gap: 5px;
+    margin: auto;
+    height: auto; 
+    }
+    /* my work grid items */ 
+    .grid-item {
+    display: flex; 
+    background-color: var(--lilac);
+    border: var(--border-peach);
+    border-radius: 8px;
+    width: 100%;
+    }
+    .grid-item img {
+    display: flex; 
+    width: 100%; 
+    height: 100%;
+    }
+    .item-1{
+    grid-column: 1 / span 10; 
+    }
+    .item-1 h2 {
+    color: var(--lilac);
+    background-color: var(--peach);
+    font-size: 41px;  
+    letter-spacing: 19px; 
+    width: 100%; 
+    padding-top: 23px; 
+    }
+    .item-1 h2::before {
+    content:"✨";
+    }
+    .item-2 { /* horiseon */ 
+    grid-column: 1/ span 10;  
+    grid-row: 2/ span 4; 
+    }
+    .item-3 { /*run-buddy*/ 
+    grid-column: 1/ span 3;
+    grid-row: 6; 
+    }
+    .item-4 { /* trolls */ 
+    grid-column: 4/ span 2; 
+    grid-row: 6/ span 1; 
+    }
+    .item-5 { /**dino database**/
+    grid-column: 6/ span 2;
+    grid-row: 6/ span 1; 
+    }
+    .item-6 { /* luna and vanessa */
+    grid-column: 8/ span 3; 
+    grid-row: 6/ span 1;
+    }
+
+    /* about me and profile pic */
+    .about-me-container {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto; 
+    background-color: var(--lilac);
+    }
+    .image-item {
+    width: 40%; 
+    height: auto; 
+    background: var(--lilac);
+    order: 3;
+    }
+    .image-item img {
+    width: 100%;
+    height:auto;  
+    }
+    .about-me-item { 
+    width: 10%; 
+    border: var(--border-lilac); 
+    height: auto; 
+    order: 2; 
+    }
+    .about-me-item h2 { 
+    font-size: 55px; 
+    letter-spacing: 24px;
+    margin-left: 18px;
+    text-align: center;   
+    color: var(--lilac);  
+    width: 100%;  
+    }
+    .about-me-item h2::after {
+    content: "✨✨";
+    }
+    .text-image {
+    width: 50%; 
+    color:var(--peach); 
+    font-size: 35px; 
+    text-align: center; 
+    line-height: 50px;
+    background-color: var(--lilac); 
+    border: var(--border-peach); 
+    border-radius: 10px; 
+    height: auto; 
+    order: 1;
+    }
+    /* hidden in mobile version, becomes visible in desktop */
+    .text-image-2 {
+    display: block; 
+    background-color: var(--lilac);
+    font-size: 35px;
+    text-align: center; 
+    line-height: 50px;
+    }
+    /* contact me section */
+    .contact-me-container {
+    display: flex;
+    flex-flow: row wrap; 
+    height: auto;  
+    border: var(--border-peach);
+    background-color: var(--lilac);
+    }
+    .contact-section { 
+    background-color: var(--peach); 
+    height:auto;
+    width: 10%;
+    border: var(--border-lilac);
+    }
+    .contact-section h2 {
+    color: var(--lilac); 
+    font-size: 25px;  
+    writing-mode: vertical-lr;
+    text-orientation: upright;    
+    letter-spacing: 9px; 
+    height: auto;  
+    text-align: center; 
+    }
+    /* contact form */
+    .contact-form {
+    width: 30%; 
+    height: auto;
+    background-color: var(--lilac);
+    margin-top: 70px;
+    }
+    .contact-form label {
+    color: var(--lilac);
+    box-sizing: border-box;
+    margin: 10px; 
+    }
+    .contact-form input, textarea {
+    border: var(--border-peach); 
+    background-color: var(--lilac);
+    width: 90%; 
+    height: 50px; 
+    margin: 10px 0 10px 30px; 
+    }
+    .contact-form ::placeholder {
+    font-size: 21px;
+    color: white;
+    text-align: ;
+    }
+    .contact-form input[type=submit] {
+    color: var(--lilac);
+    background-color: var(--peach);
+    border:var(--border-lilac); 
+    font-weight: 900;
+    }
+
+    /* links section */
+
+    .links-section {
+    display: flex;
+    flex-flow: row wrap;
+    width:60%;  
+    background-color: var(--peach);  
+    height: auto;
+    border:var(--border-lilac);
+    }
+
+    .links-section h2 {
+    color: var(--lilac);
+    background-color: var(--peach); 
+    font-size: 45px;
+    letter-spacing: 30px;  
+    text-align: center;
+    width: 100%; 
+    }
+
+    .link-icon {
+    width: 25%; 
+    text-decoration: none;
+    background: none; 
+    color: var(--lilac); 
+    opacity: .7; 
+    margin: 50px; 
+    }
+
+    .link-icon:hover {
+    opacity: 1; 
+    }
+
+}
