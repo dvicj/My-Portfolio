@@ -60,14 +60,14 @@ Below are examples of the links for the CSS style sheet and the images used in t
 
 ![image relative path](https://github.com/dvicj/Horiseon-Accessibility/blob/main/image%20relative%20path.PNG)
 
+## Usage
+Here are some user experience highlights from my page: 
 
-
-## Usage 
-
-In the gif included below, I have demonstrated how all of the navigation links work. When the links in the navigation bar are clicked, they will jump to the corresponding section in the webpage, or open up a seperate webpage. 
-
-![Showcasing working links](https:)
-
+    - navigation links scroll to corresponding section when clicked 
+    - navigation link for "resume" opens up a new webpage
+    - link icons at the bottom of the webpage open up all my social media/ networking sites in another tab
+    - in Desktop mode, all of the images are opaque until they are hovered over. Hovering over the images from the "My Work" section will reveal a tooltip with the title of the project
+    - responsive web design - elements of the page grow/ shrink and switch position depending on the screen size used to view the website. 
 
 ## Credits
 These are some sources I used to help me along:
