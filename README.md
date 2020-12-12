@@ -8,7 +8,7 @@ How it started:
 
 How it's going:
 <br>
-![how it's going]()
+![how it's going](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/2020-12-11%20-%20image%202.PNG)
 
 Hello, and welcome to my README! This is for my Week 2 Challenge, which was to create a personal portfolio website. I learned a lot while doing this, and I am happy to be able to share my experience with you. 
 
