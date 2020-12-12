@@ -116,6 +116,24 @@ img {
     grid-row: 6/ span 1;
 }
 
+.tooltip {
+    position: relative; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px; 
+    background-color: var(--peach);
+    color: var(--lilac); 
+    text-align: center; 
+    border-radius: 10px;
+    position: absolute; 
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* about me and profile pic */
 
