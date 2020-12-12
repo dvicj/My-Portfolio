@@ -7,6 +7,8 @@ How it started:
 ![how it started](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/2020-12-08%20%20-%20image%201.PNG)
 
 How it's going:
+<br>
+![how it's going]()
 
 Hello, and welcome to my README! This is for my Week 2 Challenge, which was to create a personal portfolio website. I learned a lot while doing this, and I am happy to be able to share my experience with you. 
 
@@ -95,7 +97,7 @@ Below are some images of the drawings I did when planning my portfolio out. Quit
 
 ![desktop version](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/desktop-version.PNG)
 ![mobile version](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/mobile-version.PNG)
-![responsiveness](https:)
+![responsiveness](https://github.com/dvicj/My-Portfolio/blob/main/assets/images/responsive-version.PNG)
 
 
 
