@@ -23,6 +23,16 @@ img:hover {
 }
 
 /* navbar/header */
+.hero {
+    display: flex; 
+    height: 125px; 
+    justify-content: center;
+    width: 100%; 
+
+}
+.hero img {
+    height: 125px; 
+}
 
 /*navbar flex container*/
 .navbar {
@@ -66,13 +76,6 @@ ul li::before {
     content:"✨"
 }
 
-
-/* hero - placeholder for now*/
-.hero {
-    height: 150px; 
-    background-color: white;
-}
-
 .footer {
     display: flex; 
     flex-flow: row nowrap;  
@@ -91,6 +94,16 @@ ul li::before {
 }
 
 @media screen and (min-width: 600px) {
+    .hero {
+        display: flex;
+        background-color: var(--peach);
+        justify-content: center; 
+        height: 350px; 
+    }
+    .hero img { 
+        opacity: 1; 
+        height: 350px; 
+    }
     .navbar {
           flex-flow: row nowrap; 
           height: 200px; 

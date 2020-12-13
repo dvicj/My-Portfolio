@@ -25,6 +25,17 @@ img {
 /* MOBILE VERSION */
 /* navbar/header */
 
+.hero {
+    display: flex; 
+    height: 125px; 
+    justify-content: center;
+    width: 100%; 
+
+}
+.hero img {
+    height: 125px; 
+}
+
 /*navbar flex container*/
 .navbar {
     display: flex; 
@@ -47,16 +58,6 @@ img {
 }
 .navbar-links::after {
     content: "✨";
-}
-
-/* hero - placeholder for now*/
-.hero {
-    height: 150px; 
-    background-color:var(--lilac);
-}
-.hero h1 {
-    background-color: var(--lilac);
-    color: var(--peach); 
 }
 
 /* content */ 
@@ -289,6 +290,16 @@ img {
 /* DESKTOP/ LAPTOP VERSION */
 @media screen and (min-width: 950px) {
     /* navbar/header */
+    .hero {
+        display: flex;
+        background-color: var(--peach);
+        justify-content: center; 
+        height: 350px; 
+    }
+    .hero img { 
+        opacity: 1; 
+        height: 350px; 
+    }
     .navbar {
           flex-flow: row nowrap; 
           height: 200px; 
